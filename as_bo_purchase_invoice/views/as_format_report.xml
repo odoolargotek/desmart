@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <report id="as_purchase_summary_report_pdf" model="as.libro.compras" string="Libro de compras"
+      report_type="qweb-pdf" name="as_bo_purchase_invoice.as_pdf_report_libro_compras"
+      file="as_bo_purchase_invoice.as_pdf_report_libro_compras" menu="True" />
+    <record id="as_as_sale_summary_report_paperformat" model="report.paperformat">
+      <field name="name">Libro de compras PDF</field>
+      <field name="default" eval="True" />
+      <field name="format">Letter</field>
+      <field name="page_height">0</field>
+      <field name="page_width">0</field>
+      <field name="orientation">Landscape</field>
+      <field name="margin_top">35</field>
+      <field name="margin_bottom">25</field>
+      <field name="margin_left">7</field>
+      <field name="margin_right">7</field>
+      <field name="header_line" eval="False" />
+      <field name="header_spacing">47</field>
+      <field name="dpi">90</field>
+      <field name="report_ids" eval="[(4, ref('as_bo_purchase_invoice.as_purchase_summary_report_pdf'))]" />
+    </record>
+
+  </data>
+</odoo>

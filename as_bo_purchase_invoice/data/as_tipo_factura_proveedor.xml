@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo> 
+    <data noupdate="0">
+        <record id="as_tipo_factura_prov1" model="as.tipo.factura">
+            <field name="name">Normal</field>
+            <field name="as_factor">0</field>
+        </record>
+        <record id="as_tipo_factura_prov2" model="as.tipo.factura">
+            <field name="name">Combustible</field>
+            <field name="as_factor">30</field>
+        </record>
+        <record id="as_tipo_factura_prov3" model="as.tipo.factura">
+            <field name="name">Servicios Basicos</field>
+            <field name="as_factor">0</field>
+        </record>
+        <record id="as_tipo_retenciones1" model="as.tipo.retencion">
+            <field name="name">Sin Retenciones</field>
+        </record>
+       
+    </data>
+</odoo>
